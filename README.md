@@ -12,6 +12,8 @@ The screenshots below were created on 10 June 2017 using [Visual Studio for Mac]
 
 These recommendations are only meant for Debug Configuration builds. They will reduce the time for each compilation, but may increase the size of the app and decrease the performance and load-time of the app.
 
+I highly recommend utilizing the Linker for Release Configuration builds; `Link SDKs and Frameworks` is my recommended minimum setting. I also highly recommend heavily testing the Release Configuration build of the app because the app may behave differently when the Linker is utilized.
+
 ## iOS Build Settings
 
 ![iOS Build Settings](./Images/iOS_Build_Settings.png)
