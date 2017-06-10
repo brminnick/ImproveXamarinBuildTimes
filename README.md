@@ -1,20 +1,18 @@
-# Improve Xamarin Build Times
+# About
 
-## About
-
-### Purpose
+## Purpose
 
 Sometimes Xamarin Build times can take a long time, adding delays to our development timeline. Below are tips to reduce the compilation time for Debug Configuration builds.
 
 The screenshots below were created on 10 June 2017 using [Visual Studio for Mac](https://www.visualstudio.com/vs/visual-studio-mac/) v7.0.1 and [UITestSampleApp](https://github.com/brminnick/UITestSampleApp).
 
-### Disclaimer
+## Disclaimer
 
 These recommendations are only meant for Debug Configuration builds. They will reduce the time for each compilation, but may increase the size of the app and decrease the performance and load-time of the app.
 
 I highly recommend utilizing the Linker for Release Configuration builds; `Link SDKs and Frameworks` is my recommended minimum setting. I also highly recommend heavily testing the Release Configuration build of the app because the app may behave differently when the Linker is utilized.
 
-## iOS Build Settings
+# iOS Build Settings
 
 ![iOS Build Settings](./Images/iOS_Build_Settings.png)
 
@@ -29,9 +27,9 @@ I highly recommend utilizing the Linker for Release Configuration builds; `Link 
 - Enable device-specific builds
   - This encourages the compiler to only compile for the targeted device
 
-## Android Build Settings
+# Android Build Settings
 
-### General
+## General
 
 ![iOS Build Settings](./Images/Android_Build_Settings_General.png)
 
@@ -40,14 +38,14 @@ I highly recommend utilizing the Linker for Release Configuration builds; `Link 
 - Fast Assembly Deployment
   - Doesn’t compile assemblies and deploys assemblies directly to the device
 
-### Linker
+## Linker
 
 ![iOS Build Settings](./Images/Android_Build_Settings_Linker.png)
 
 - Linker Behavior: Don’t Link
   - Linking will cause compilation to take longer
 
-### Advanced
+## Advanced
 
 ![Android Advanced Build Settings](./Images/Android_Build_Settings_Advanced.png)
 
@@ -55,7 +53,7 @@ I highly recommend utilizing the Linker for Release Configuration builds; `Link 
   - Select the ABI for the targeted device
   - E.g. if you’re deploying to an x86 emulator, only select the x86 ABI
 
-## Project References
+# Project References
 
 ![Edit References](./Images/ProjectReferences_EditReferences.png)
 
