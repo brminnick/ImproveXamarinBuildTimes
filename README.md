@@ -16,38 +16,43 @@ I highly recommend utilizing the Linker for Release Configuration builds; `Link 
 
 ![iOS Build Settings](./Images/iOS_Build_Settings.png)
 
-- Linker behavior: Don’t Link
-  - Linking will cause compilation to take longer
-- Supported architecture: x86_64
-  - Selecting multiple architectures will cause compilation to take longer
-  - X86_64 works for iPhone Simulators 5s - 7
-  - i386 works for iPhones earlier than the iPhone 5s
+- Linker behavior: Don’t Link for Simulator Builds, Link on Devices Builds
+  - The Linker will reduce the amount of managed code which means less native code to AOT compile
+  - Simulator builds don't AOT compile, but Device builds do AOT compile
 - Enable incremental builds
-  - This will allow the compiler to only compile code that has changed
+  - Allows the AOT compiler to compile only the code that changed
 - Enable device-specific builds
   - This encourages the compiler to only compile for the targeted device
+  - This allows you to select many supported architectures
+  - Selecting multiple architectures without enabling device-specific builds will cause compilation to take longer
+    - X86_64 Architecture works for iPhone Simulators 5s - 7
+    - i386 Architecture works for iPhone Simulators earlier than the iPhone 5s
 
 # Android Build Settings
 
 ## General
 
-![iOS Build Settings](./Images/Android_Build_Settings_General.png)
+![Android Build Settings, General](./Images/Android_Build_Settings_General.png)
 
 - Use Shared Mono Runtime
-  - This will install mono on the targeted device and allows the compiler to only compile the managed code
+  - This will install Mono on the targeted device
+  - Installing Mono on the device means that Mono doesn't have to be bundled in the APK, making the APK quicker to compile and deploy
 - Fast Assembly Deployment
-  - Doesn’t compile assemblies and deploys assemblies directly to the device
+  - Deploys assemblies to a directory on the device instead of bundling them in the APK
+  - The APK compiles faster, is smaller, and  is faster to deploy
+  - Allows Xamarin to deploy individual changed assemblies instead of rebuilding/redeploying the entire APK
 
 ## Linker
 
-![iOS Build Settings](./Images/Android_Build_Settings_Linker.png)
+![Android Build Settings, Linker](./Images/Android_Build_Settings_Linker.png)
 
-- Linker Behavior: Don’t Link
-  - Linking will cause compilation to take longer
+- Linker Behavior: Link SDK assemblies only
+  - The Linker will reduce the amount of managed code which means less native code to compile
+  - Because Android uses emulators which behave similarly to Android devices, there isn't a recommended difference between Emulator & Device builds for the Linker settings like there is for iOS
 
 ## Advanced
 
-![Android Advanced Build Settings](./Images/Android_Build_Settings_Advanced.png)
+![Android Build Settings, Advanced](./Images/Android_Build_Settings_Advanced.png)
 
 - Supported ABIs
   - Select the ABI for the targeted device
