@@ -81,7 +81,7 @@ I highly recommend utilizing the Linker for Release Configuration builds; `Link 
 - Add [`AndroidExplicitCrunch`](https://developer.xamarin.com/guides/android/under_the_hood/build_process/#Resource_Properties) to the Droid `csproj` file
   - When this property is set, the build process pre-crunches the .png files
   - Requires Xamarin.Android 7.0+
-  - If you are building an app with a very large number of local drawables, an initial build (or rebuild) can take minutes to complete. To speed up the build process, set `AndroidExplicitCrunch` property to `True` in the `csproj` file
+  - If you are building an app with a very large number of local drawables, an initial build (or rebuild) can take minutes to complete. To speed up the build process, set `AndroidExplicitCrunch` property to `true` in the `csproj` file
 
 
 # Project References
