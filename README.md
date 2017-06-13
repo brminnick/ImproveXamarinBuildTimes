@@ -12,6 +12,22 @@ These recommendations are only meant for Debug Configuration builds. They will r
 
 I highly recommend utilizing the Linker for Release Configuration builds; `Link SDKs and Frameworks` is my recommended minimum setting. I also highly recommend heavily testing the Release Configuration build of the app because the app may behave differently when the Linker is utilized.
 
+## Additional Resources
+
+### Xamarin Videos
+
+- [Understanding Implications of Build Options, Xamarin Evolve 2016](https://evolve.xamarin.com/session/56e21fe4bad314273ca4d825)
+
+### Xamarin.iOS Documention
+
+- [iOS Build Mechanics](https://developer.xamarin.com/guides/ios/advanced_topics/ios-build-mechanics/)
+
+### Xamarin.Android Documentation
+
+- [Build Process](https://developer.xamarin.com/guides/android/under_the_hood/build_process/)
+- [Build ABI Specific APKs](https://developer.xamarin.com/guides/android/advanced_topics/build-abi-specific-apks/)
+- [Linking on Android](https://developer.xamarin.com/guides/android/advanced_topics/linking/)
+
 # iOS Build Settings
 
 ![iOS Build Settings](./Images/iOS_Build_Settings.png)
@@ -58,6 +74,16 @@ I highly recommend utilizing the Linker for Release Configuration builds; `Link 
   - Select the ABI for the targeted device
   - E.g. if you’re deploying to an x86 emulator, only select the x86 ABI
 
+## `CSPROJ`
+
+![Android CSProj File](./Images/AndroidExplicitCrunch.png)
+
+- Add [`AndroidExplicitCrunch`](https://developer.xamarin.com/guides/android/under_the_hood/build_process/#Resource_Properties) to the Droid `csproj` file
+  - When this property is set, the build process pre-crunches the .png files
+  - Requires Xamarin.Android 7.0+
+  - If you are building an app with a very large number of local drawables, an initial build (or rebuild) can take minutes to complete. To speed up the build process, set `AndroidExplicitCrunch` property to `True` in the `csproj` file
+
+
 # Project References
 
 ![Edit References](./Images/ProjectReferences_EditReferences.png)
@@ -66,3 +92,14 @@ I highly recommend utilizing the Linker for Release Configuration builds; `Link 
 - Compilation time increases for every referenced PCL
   - Referenced PCLs will compile first, then the Startup Project will compile
   - Using Shared Projects allows the project to compile faster than PCLs
+
+# Thank You
+
+Thank you to all who have helped contribute to this doc!
+
+- [Jon Douglas](https://twitter.com/_JonDouglas)
+- [Kevin Ford](https://twitter.com/bowman74)
+- [Mikayla Hutchinson](https://twitter.com/mjhutchinson)
+- [Patrick Suzuki](https://github.com/patrickluvsoj)
+- [Pierce Boggan](https://twitter.com/pierceboggan)
+- [Rob DeRosa](https://github.com/rob-derosa)
