@@ -106,3 +106,4 @@ Thank you to all who have helped contribute to this doc!
 - [Patrick Suzuki](https://github.com/patrickluvsoj)
 - [Pierce Boggan](https://twitter.com/pierceboggan)
 - [Rob DeRosa](https://github.com/rob-derosa)
+- [Jonathan Peppers](https://jonathanpeppers.com)
