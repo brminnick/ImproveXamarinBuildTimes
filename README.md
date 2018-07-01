@@ -30,7 +30,7 @@ I highly recommend utilizing the Linker for Release Configuration builds; `Link 
 
 # iOS Build Settings
 
-![iOS Build Settings](./Images/iOS_Build_Settings.png)
+![iOS Build Settings](https://user-images.githubusercontent.com/13558917/42137334-a14cc2b4-7d1f-11e8-8678-5b071c908f52.png)
 
 - Linker behavior: Don’t Link for Simulator Builds, Link on Devices Builds
   - The Linker will reduce the amount of managed code which means less native code to AOT compile
@@ -48,7 +48,7 @@ I highly recommend utilizing the Linker for Release Configuration builds; `Link 
 
 ## General
 
-![Android Build Settings, General](./Images/Android_Build_Settings_General.png)
+![Android Build Settings, General](https://user-images.githubusercontent.com/13558917/42137337-a18d05b8-7d1f-11e8-854e-e1d3ba7393ff.png)
 
 - Use Shared Mono Runtime
   - This will install Mono on the targeted device
@@ -60,7 +60,7 @@ I highly recommend utilizing the Linker for Release Configuration builds; `Link 
 
 ## Linker
 
-![Android Build Settings, Linker](./Images/Android_Build_Settings_Linker.png)
+![Android Build Settings, Linker](https://user-images.githubusercontent.com/13558917/42137336-a1771a8c-7d1f-11e8-83df-a6c5a1c783ff.png)
 
 - Linker Behavior: Link SDK assemblies only
   - The Linker will reduce the amount of managed code which means less native code to compile
@@ -68,7 +68,7 @@ I highly recommend utilizing the Linker for Release Configuration builds; `Link 
 
 ## Advanced
 
-![Android Build Settings, Advanced](./Images/Android_Build_Settings_Advanced.png)
+![Android Build Settings, Advanced](https://user-images.githubusercontent.com/13558917/42137338-a1a27f56-7d1f-11e8-9e8f-02b7ada6ff1a.png)
 
 - Supported ABIs
   - Select the ABI for the targeted device
@@ -76,7 +76,7 @@ I highly recommend utilizing the Linker for Release Configuration builds; `Link 
 
 ## `CSPROJ`
 
-![Android CSProj File](./Images/AndroidExplicitCrunch.png)
+![Android CSProj File](https://user-images.githubusercontent.com/13558917/42137335-a162048a-7d1f-11e8-9ffc-c215e040f76f.png)
 
 _NOTE: This is an experimental setting!_
 
@@ -88,7 +88,7 @@ _NOTE: This is an experimental setting!_
 
 # Project References
 
-![Edit References](./Images/ProjectReferences_EditReferences.png)
+![Edit References](https://user-images.githubusercontent.com/13558917/42137333-a1299474-7d1f-11e8-9398-f4c221460dcb.png)
 
 - Limit the number of referenced projects in the solution
 - Compilation time increases for every referenced PCL
