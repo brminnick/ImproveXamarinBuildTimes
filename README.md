@@ -30,7 +30,7 @@ I highly recommend utilizing the Linker for Release Configuration builds; `Link 
 
 # iOS Build Settings
 
-![iOS Build Settings](https://user-images.githubusercontent.com/13558917/42137334-a14cc2b4-7d1f-11e8-8678-5b071c908f52.png)
+![iOS Build Settings](https://user-images.githubusercontent.com/13558917/43491696-66820752-94da-11e8-8955-dd5017cc4b00.png)
 
 - Linker behavior: Don’t Link for Simulator Builds, Link on Devices Builds
   - The Linker will reduce the amount of managed code which means less native code to AOT compile
@@ -41,8 +41,10 @@ I highly recommend utilizing the Linker for Release Configuration builds; `Link 
   - This encourages the compiler to only compile for the targeted device
   - This allows you to select many supported architectures
   - Selecting multiple architectures without enabling device-specific builds will cause compilation to take longer
-    - X86_64 Architecture works for iPhone Simulators 5s - 7
-    - i386 Architecture works for iPhone Simulators earlier than the iPhone 5s
+        - X86_64 Architecture works for iPhone Simulators 5s - 7
+        - i386 Architecture works for iPhone Simulators earlier than the iPhone 5s
+- Optimize PNG Files: Uncheck
+  - The compiler will take extra time doing the optimizations
 
 # Android Build Settings
 
