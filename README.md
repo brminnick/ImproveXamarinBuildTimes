@@ -110,3 +110,4 @@ Thank you to all who have helped contribute to this doc!
 - [Pierce Boggan](https://twitter.com/pierceboggan)
 - [Rob DeRosa](https://github.com/rob-derosa)
 - [Jonathan Peppers](https://jonathanpeppers.com)
+- [Tom Soderling](https://twitter.com/tomsoderling)
