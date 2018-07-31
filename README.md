@@ -45,7 +45,7 @@ I highly recommend utilizing the Linker for Release Configuration builds; `Link 
         - X86_64 Architecture works for iPhone Simulators 5s - 7
         - i386 Architecture works for iPhone Simulators earlier than the iPhone 5s
         
-- Optimize PNG Files: Uncheck
+- Optimize PNG Images: Uncheck
   - The compiler will take extra time doing the optimizations
 
 # Android Build Settings
