@@ -16,17 +16,17 @@ I highly recommend utilizing the Linker for Release Configuration builds; `Link 
 
 ### Xamarin Videos
 
-- [Understanding Implications of Build Options, Xamarin Evolve 2016](https://evolve.xamarin.com/session/56e21fe4bad314273ca4d825)
+- [Understanding Implications of Build Options, Xamarin Evolve 2016](https://channel9.msdn.com/Events/Xamarin-Evolve/2016/Understanding-Implications-of-Build-Options?WT.mc_id=ImproveXamarinBuildTimes-github-bramin)
 
 ### Xamarin.iOS Documention
 
-- [iOS Build Mechanics](https://docs.microsoft.com/xamarin/ios/deploy-test/ios-build-mechanics/?WT.mc_id=none-github-bramin)
+- [iOS Build Mechanics](https://docs.microsoft.com/xamarin/ios/deploy-test/ios-build-mechanics?WT.mc_id=ImproveXamarinBuildTimes-github-bramin)
 
 ### Xamarin.Android Documentation
 
-- [Build Process](https://docs.microsoft.com/xamarin/android/deploy-test/building-apps/build-process/?WT.mc_id=none-github-bramin)
-- [Build ABI Specific APKs](https://docs.microsoft.com/xamarin/android/deploy-test/building-apps/abi-specific-apks/?WT.mc_id=none-github-bramin)
-- [Linking on Android](https://docs.microsoft.com/xamarin/android/deploy-test/linker/?WT.mc_id=none-github-bramin)
+- [Build Process](https://docs.microsoft.com/xamarin/android/deploy-test/building-apps/build-process/?WT.mc_id=ImproveXamarinBuildTimes-github-bramin)
+- [Build ABI Specific APKs](https://docs.microsoft.com/xamarin/android/deploy-test/building-apps/abi-specific-apks?WT.mc_id=ImproveXamarinBuildTimes-github-bramin)
+- [Linking on Android](https://docs.microsoft.com/xamarin/android/deploy-test/linker?WT.mc_id=ImproveXamarinBuildTimes-github-bramin)
 
 # iOS Build Settings
 
