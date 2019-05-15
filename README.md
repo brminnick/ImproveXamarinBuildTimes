@@ -92,10 +92,10 @@ _NOTE: This is an experimental setting!_
 
 ![Edit References](https://user-images.githubusercontent.com/13558917/42137333-a1299474-7d1f-11e8-9398-f4c221460dcb.png)
 
-- Limit the number of referenced projects in the solution
-- Compilation time increases for every referenced PCL
-  - Referenced PCLs will compile first, then the Startup Project will compile
-  - Using Shared Projects allows the project to compile faster than PCLs
+- Use shared projects instead of .NET Standard libraries
+- Compilation time increases for every referenced .NET Standard library
+  - Referenced .NET Standard libraries will compile first, then the Startup Project will compile
+  - Using Shared Projects allows the project to compile faster
 
 # Thank You
 
