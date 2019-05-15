@@ -40,7 +40,7 @@ I highly recommend utilizing the Linker for Release Configuration builds; `Link 
   - This allows you to select many supported architectures
   - Selecting multiple architectures without enabling device-specific builds will cause compilation to take longer
 
-        - X86_64 Architecture works for iPhone Simulators 5s - 7
+        - X86_64 Architecture works for iPhone Simulators 5s and newer
         - i386 Architecture works for iPhone Simulators earlier than the iPhone 5s
         
 - Optimize PNG Images
