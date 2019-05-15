@@ -1,5 +1,3 @@
-# About
-
 ## Purpose
 
 Sometimes Xamarin Build times can take a long time, adding delays to our development timeline. Below are tips to reduce the compilation time for Debug Configuration builds.
