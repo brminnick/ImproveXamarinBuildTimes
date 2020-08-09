@@ -2,7 +2,7 @@
 
 Sometimes Xamarin Build times can take a long time, adding delays to our development timeline. Below are tips to reduce the compilation time for Debug Configuration builds.
 
-The screenshots below were created on 10 June 2017 using [Visual Studio for Mac](https://www.visualstudio.com/vs/visual-studio-mac?WT.mc_id=ImproveXamarinBuildTimes-github-bramin) v7.0.1 and [UITestSampleApp](https://github.com/brminnick/UITestSampleApp).
+The screenshots below were created on 10 June 2017 using [Visual Studio for Mac](https://www.visualstudio.com/vs/visual-studio-mac?WT.mc_id=improvexamarinbuildtimes-github-bramin) v7.0.1 and [UITestSampleApp](https://github.com/brminnick/UITestSampleApp).
 
 ## Disclaimer
 
@@ -14,17 +14,17 @@ I highly recommend utilizing the Linker for Release Configuration builds; `Link 
 
 ### Xamarin Videos
 
-- [Understanding Implications of Build Options, Xamarin Evolve 2016](https://channel9.msdn.com/Events/Xamarin-Evolve/2016/Understanding-Implications-of-Build-Options?WT.mc_id=ImproveXamarinBuildTimes-github-bramin)
+- [Understanding Implications of Build Options, Xamarin Evolve 2016](https://channel9.msdn.com/Events/Xamarin-Evolve/2016/Understanding-Implications-of-Build-Options?WT.mc_id=improvexamarinbuildtimes-github-bramin)
 
 ### Xamarin.iOS Documention
 
-- [iOS Build Mechanics](https://docs.microsoft.com/xamarin/ios/deploy-test/ios-build-mechanics?WT.mc_id=ImproveXamarinBuildTimes-github-bramin)
+- [iOS Build Mechanics](https://docs.microsoft.com/xamarin/ios/deploy-test/ios-build-mechanics?WT.mc_id=improvexamarinbuildtimes-github-bramin)
 
 ### Xamarin.Android Documentation
 
-- [Build Process](https://docs.microsoft.com/xamarin/android/deploy-test/building-apps/build-process?WT.mc_id=ImproveXamarinBuildTimes-github-bramin)
-- [Build ABI Specific APKs](https://docs.microsoft.com/xamarin/android/deploy-test/building-apps/abi-specific-apks?WT.mc_id=ImproveXamarinBuildTimes-github-bramin)
-- [Linking on Android](https://docs.microsoft.com/xamarin/android/deploy-test/linker?WT.mc_id=ImproveXamarinBuildTimes-github-bramin)
+- [Build Process](https://docs.microsoft.com/xamarin/android/deploy-test/building-apps/build-process?WT.mc_id=improvexamarinbuildtimes-github-bramin)
+- [Build ABI Specific APKs](https://docs.microsoft.com/xamarin/android/deploy-test/building-apps/abi-specific-apks?WT.mc_id=improvexamarinbuildtimes-github-bramin)
+- [Linking on Android](https://docs.microsoft.com/xamarin/android/deploy-test/linker?WT.mc_id=improvexamarinbuildtimes-github-bramin)
 
 # iOS Build Settings
 
@@ -82,7 +82,7 @@ I highly recommend utilizing the Linker for Release Configuration builds; `Link 
 
 _NOTE: This is an experimental setting!_
 
-- Add [`AndroidExplicitCrunch`](https://docs.microsoft.com/xamarin/android/deploy-test/building-apps/build-process?WT.mc_id=ImproveXamarinBuildTimes-github-bramin) to the Droid `csproj` file
+- Add [`AndroidExplicitCrunch`](https://docs.microsoft.com/xamarin/android/deploy-test/building-apps/build-process?WT.mc_id=improvexamarinbuildtimes-github-bramin) to the Droid `csproj` file
   - When this property is set, the build process pre-crunches the .png files
   - Requires Xamarin.Android 7.0+
   - If you are building an app with a very large number of local drawables, an initial build (or rebuild) can take minutes to complete. To speed up the build process, set `AndroidExplicitCrunch` property to `true` in the `csproj` file.
