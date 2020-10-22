@@ -14,17 +14,17 @@ I highly recommend utilizing the Linker for Release Configuration builds; `Link 
 
 ### Xamarin Videos
 
-- [Understanding Implications of Build Options, Xamarin Evolve 2016](https://channel9.msdn.com/Events/Xamarin-Evolve/2016/Understanding-Implications-of-Build-Options?WT.mc_id=improvexamarinbuildtimes-github-bramin)
+- [Understanding Implications of Build Options, Xamarin Evolve 2016](https://channel9.msdn.com/Events/Xamarin-Evolve/2016/Understanding-Implications-of-Build-Options?WT.mc_id=mobile-0000-bramin)
 
 ### Xamarin.iOS Documention
 
-- [iOS Build Mechanics](https://docs.microsoft.com/xamarin/ios/deploy-test/ios-build-mechanics?WT.mc_id=improvexamarinbuildtimes-github-bramin)
+- [iOS Build Mechanics](https://docs.microsoft.com/xamarin/ios/deploy-test/ios-build-mechanics?WT.mc_id=mobile-0000-bramin)
 
 ### Xamarin.Android Documentation
 
-- [Build Process](https://docs.microsoft.com/xamarin/android/deploy-test/building-apps/build-process?WT.mc_id=improvexamarinbuildtimes-github-bramin)
-- [Build ABI Specific APKs](https://docs.microsoft.com/xamarin/android/deploy-test/building-apps/abi-specific-apks?WT.mc_id=improvexamarinbuildtimes-github-bramin)
-- [Linking on Android](https://docs.microsoft.com/xamarin/android/deploy-test/linker?WT.mc_id=improvexamarinbuildtimes-github-bramin)
+- [Build Process](https://docs.microsoft.com/xamarin/android/deploy-test/building-apps/build-process?WT.mc_id=mobile-0000-bramin)
+- [Build ABI Specific APKs](https://docs.microsoft.com/xamarin/android/deploy-test/building-apps/abi-specific-apks?WT.mc_id=mobile-0000-bramin)
+- [Linking on Android](https://docs.microsoft.com/xamarin/android/deploy-test/linker?WT.mc_id=mobile-0000-bramin)
 
 # iOS Build Settings
 
@@ -82,7 +82,7 @@ I highly recommend utilizing the Linker for Release Configuration builds; `Link 
 
 _NOTE: This is an experimental setting!_
 
-- Add [`AndroidExplicitCrunch`](https://docs.microsoft.com/xamarin/android/deploy-test/building-apps/build-process?WT.mc_id=improvexamarinbuildtimes-github-bramin) to the Droid `csproj` file
+- Add [`AndroidExplicitCrunch`](https://docs.microsoft.com/xamarin/android/deploy-test/building-apps/build-process?WT.mc_id=mobile-0000-bramin) to the Droid `csproj` file
   - When this property is set, the build process pre-crunches the .png files
   - Requires Xamarin.Android 7.0+
   - If you are building an app with a very large number of local drawables, an initial build (or rebuild) can take minutes to complete. To speed up the build process, set `AndroidExplicitCrunch` property to `true` in the `csproj` file.
